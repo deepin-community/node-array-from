@@ -1,0 +1,64 @@
+{
+  "_from": "tape-catch@1.0.4",
+  "_id": "tape-catch@1.0.4",
+  "_inBundle": false,
+  "_integrity": "sha1-BGEv0qzn+SuYmF1FoHOM9tS9JN0=",
+  "_location": "/tape-catch",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "tape-catch@1.0.4",
+    "name": "tape-catch",
+    "escapedName": "tape-catch",
+    "rawSpec": "1.0.4",
+    "saveSpec": null,
+    "fetchSpec": "1.0.4"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "https://registry.npmjs.org/tape-catch/-/tape-catch-1.0.4.tgz",
+  "_shasum": "04612fd2ace7f92b98985d45a0738cf6d4bd24dd",
+  "_spec": "tape-catch@1.0.4",
+  "_where": "/home/xavier/dev/debian/src/pkg-js/packages/node-array-from",
+  "author": {
+    "name": "Michael Rhodes"
+  },
+  "bugs": {
+    "url": "https://github.com/michaelrhodes/tape-catch/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "a wrapper around tape that catches and reports exceptions",
+  "devDependencies": {
+    "concat-stream": "~1.4.7",
+    "cpr": "~0.3.2",
+    "falafel": "~0.3.1",
+    "mkdirp": "~0.5.0",
+    "run-series": "~1.0.2",
+    "tap": "~0.5.0",
+    "tape": "git://github.com/michaelrhodes/tape.git#no-res-at"
+  },
+  "homepage": "https://github.com/michaelrhodes/tape-catch",
+  "keywords": [
+    "tape",
+    "exception",
+    "catch"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "tape-catch",
+  "peerDependencies": {
+    "tape": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaelrhodes/tape-catch.git"
+  },
+  "scripts": {
+    "copy-tape-tests": "bin/copy-tape-tests.js",
+    "test": "npm run copy-tape-tests && tap test/*.js"
+  },
+  "version": "1.0.4"
+}

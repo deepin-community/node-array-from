@@ -1,0 +1,1 @@
+NODE_PATH=debian/tests/test_modules tape test.js

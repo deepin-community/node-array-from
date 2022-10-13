@@ -1,0 +1,25 @@
+Description: fix test for recent core-js
+Author: Xavier Guimard <yadd@debian.org>
+Forwarded: not-needed
+Last-Update: 2020-03-19
+
+--- a/test.js
++++ b/test.js
+@@ -2,7 +2,7 @@
+ var plus = require('1-liners/plus');
+ var isNative = require('lodash.isnative');
+ // Shim Symbol.iterator if it's not available
+-require('core-js/es6/symbol');
++require('core-js/es/symbol');
+ 
+ var arrayFrom = require('./polyfill');
+ 
+@@ -91,7 +91,7 @@
+ 
+ test('Works for iterable objects', function(is) {
+ 
+-  var SetPolyfill = require('core-js/library/fn/set');
++  var SetPolyfill = require('core-js/stable/set');
+ 
+   is.deepEqual(
+     arrayFrom(new SetPolyfill(['a', 'b', 'c'])),

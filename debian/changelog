@@ -1,0 +1,27 @@
+node-array-from (2.1.1-2) unstable; urgency=medium
+
+  * Team upload
+
+  [ Paolo Greppi ]
+  * Update Vcs fields for migration to https://salsa.debian.org/
+
+  [ Xavier Guimard ]
+  * Declare compliance with policy 4.5.0
+  * Bump debhelper compatibility level to 12
+  * Use pkg-js-tools auto install
+  * Add "Rules-Requires-Root: no"
+  * Change section to javascript
+  * Add debian/gbp.conf
+  * Add upstream/metadata
+  * Embed 2 modules for test only
+  * Enable upstream test using tape
+  * Update copyright
+  * Fix "files" field
+
+ -- Xavier Guimard <yadd@debian.org>  Thu, 19 Mar 2020 19:28:22 +0100
+
+node-array-from (2.1.1-1) unstable; urgency=low
+
+  * Initial release (Closes: #849178)
+
+ -- Paolo Greppi <paolo.greppi@libpf.com>  Fri, 23 Dec 2016 10:11:06 +0000
