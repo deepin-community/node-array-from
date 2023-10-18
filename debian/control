@@ -3,11 +3,11 @@ Section: javascript
 Priority: optional
 Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
 Uploaders: Paolo Greppi <paolo.greppi@libpf.com>
-Build-Depends: debhelper-compat (= 12)
+Build-Depends: debhelper-compat (= 13)
  , node-core-js <!nocheck>
  , node-tape <!nocheck>
- , pkg-js-tools (>= 0.9.20~)
-Standards-Version: 4.5.0
+ , dh-sequence-nodejs
+Standards-Version: 4.6.0
 Vcs-Browser: https://salsa.debian.org/js-team/node-array-from
 Vcs-Git: https://salsa.debian.org/js-team/node-array-from.git
 Homepage: https://github.com/studio-b12/array-from
@@ -17,7 +17,7 @@ Rules-Requires-Root: no
 Package: node-array-from
 Architecture: all
 Depends: ${misc:Depends}
- , nodejs
+Multi-Arch: foreign
 Description: ES2015 Array.from ponyfill
  Node.js module providing a ponyfill (i.e. a polyfill that
  doesn't overwrite the native method) for the ES 2015 (ES6)
